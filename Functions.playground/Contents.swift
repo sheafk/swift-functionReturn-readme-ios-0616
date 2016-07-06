@@ -2,12 +2,26 @@ func printAge(name: String) {
     print("\(name) is 29")
 }
 
+func sayAge(name: String) {
+    
+    print("\(name) is 29.")
+}
+
+sayAge("Mark")
+
 printAge("Adam")
 
 
 func happyBirthday(age: Int) {
     print("Happy birthday #\(age)!")
 }
+
+func youAreOld(age: Int) {
+    
+    print("\(age) years old?? YOU'RE OLD!")
+}
+
+youAreOld(28)
 
 
 func getAge(name: String) -> Int {
@@ -43,3 +57,19 @@ func getAgeAndCongratulate(name: String) -> Int {
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
+
+
+func receipt(item: String, cost: Int) -> Int {
+    
+    //let cost = 100
+    let discount = 10
+    let savings = cost - discount
+    print("That \(item) was originally $\(cost), but today it costs $\(savings). You saved $\(discount). Have a nice day.")
+    
+    return savings
+    
+}
+
+receipt("Snowboard", cost: 98)
+
+
